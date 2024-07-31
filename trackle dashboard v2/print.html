@@ -1,0 +1,85 @@
+<header>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style2.css">
+    <script type="text/javascript" src="index.js"></script>
+
+</header>
+<body>
+    <div class="main-content">
+        <!--Naviagation bar-->
+        <div class="navBar">
+            <image class="logo" src="./images/trackle.png"></image>
+        </div>
+        <!--Dashboard panel-->
+        <div class="content-wrapper dashboard">
+            <!--Control panel-->
+            <div class="control-panel" id="sideBar">
+                <div class="user-area" id="">
+                    <image src="./images/logos/users.png" style="width: 2.5vw; float:left;"></image>
+                    <div id="logoutButtonText">username</div>
+                    <br>
+                    <button class="btn" onclick="logout();"><image class="button-logo" src="./images/logos/arrow.png"></image> logout</button>
+                </div>
+                <button class="btn" onclick="dashboard('dashboard-panel');" id="dashboard-button"><image class="button-logo" src="./images/logos/home.png"></image>&nbsp;Dashboard</button>
+                <button class="btn" onclick="dashboard('deliveries-panel');" id="deliveries-button"><image class="button-logo" src="./images/logos/list.png"></image>&nbsp;Deliveries</button>
+                <button class="btn" onclick="dashboard('create-delivery-panel');" id="new-delivery-button"><image class="button-logo" src="./images/logos/plus.png"></image>&nbsp;Create a Delivery</button>
+                <button class="btn" onclick="dashboard('records-panel');" id="delivery-records-button"><image class="button-logo" src="./images/logos/db.png"></image>&nbsp;Delivery Records</button>
+                <button class="btn" onclick="dashboard('employees-panel');" id="employees-button"><image class="button-logo" src="./images/logos/employee.png"></image>&nbsp;Employees</button>
+                <button class="btn" onclick="dashboard('email-records-panel');" id="email-records-button"><image class="button-logo" src="./images/logos/mail.png"></image>&nbsp;Email Records</button>
+                <button class="btn" onclick="dashboard('app-log-panel');" id="app-log-button"><image class="button-logo" src="./images/logos/log.png"></image>&nbsp;App Log</button>
+
+            </div>
+            <!--Deliveries panel-->
+            <div class="card main-panel deliveries-panel" id="print-deliveries">
+                <div class="holder print-no-see" style="height: 10%;">
+                    <div class="fnt-size1" style="float:left;">Deliveries</div>
+                    <button class="btn" style="float:right; width: 10%;" onclick="clearDeliveries();">CLEAR</button>
+                    <button class="btn adminButton" style="float:right; width: 10%;" onclick="printDiv('print-deliveries');">PRINT</button>
+                </div>
+                <!--headers for the table-->
+                <div class="holder" style="width: 98%; padding: 1%; position: relative;">
+                    <div class='delivery-block'>
+                        <h3 class='eb1 print-size-change'># OF BOXES</h3>
+                        <h3 class='eb2 print-size-change'>TYPE</h3>
+                        <h3 class='eb3 print-size-change'>P/U</h3>
+                        <h3 class='eb4 print-size-change'>COMPANY</h3>
+                        <h3 class='eb5 print-size-change'>NAME/ADDRESS</h3>
+                        <h3 class='eb6 print-size-change'>OTHERDATA</h3>
+                        <h3 class='eb7 print-size-change'>JOB #</h3>
+                    </div>
+                </div>
+                <div class="deliveries" id="deliveriesListing" style="position:relative;">
+                    <div class='delivery-block'>
+                        <h5 class='eb1'># OF BOXES</h5>
+                        <h5 class='eb2'>TYPE</h5>
+                        <h5 class='eb3'>P/U</h5>
+                        <h5 class='eb4'>COMPANY</h5>
+                        <h5 class='eb5'>NAME/ADDRESS</h5>
+                        <h5 class='eb6'>OTHERDATA</h5>
+                        <h5 class='eb7'>JOB #</h5>
+                    </div>
+                    <div class='delivery-block'>
+                        <h5 class='eb1'># OF BOXES</h5>
+                        <h5 class='eb2'>TYPE</h5>
+                        <h5 class='eb3'>P/U</h5>
+                        <h5 class='eb4'>COMPANY</h5>
+                        <h5 class='eb5'>NAME/ADDRESS</h5>
+                        <h5 class='eb6'>OTHERDATA</h5>
+                        <h5 class='eb7'>JOB #</h5>
+                    </div>
+                    <div class='delivery-block'>
+                        <h5 class='eb1'># OF BOXES</h5>
+                        <h5 class='eb2'>TYPE</h5>
+                        <h5 class='eb3'>P/U</h5>
+                        <h5 class='eb4'>COMPANY</h5>
+                        <h5 class='eb5'>NAME/ADDRESS</h5>
+                        <h5 class='eb6'>OTHERDATA</h5>
+                        <h5 class='eb7'>JOB #</h5>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>

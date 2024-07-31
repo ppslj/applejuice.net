@@ -1,0 +1,127 @@
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #131717;
+
+    font-family: sans-serif;
+}
+button{
+    border: 0;
+    border-radius: 0;
+}
+
+.card{
+    background-color: white;
+   
+    padding: 1vw;
+    margin: 1vw;
+
+    border: 0.2px solid rgb(204, 204, 204);
+    border-radius: 5px;
+}
+
+.card2{
+    background-color: rgb(241, 241, 241);
+    border: 0.2px solid rgb(204, 204, 204);
+    border-radius: 5px;
+    padding: 1vw;
+    margin: 1vw;
+}
+.fnt-size0{
+    font-size: 3vw;
+}
+.fnt-size1{
+    font-size: 2vw;
+}
+.fnt-size2{
+    font-size: 1.5vw;
+}
+.fnt-size3{
+    font-size: 1vw;
+}
+
+
+.login{
+    width: 40%;
+    height: 100%;
+    background-color: #ffffff;
+    border-radius: 0;
+    position: relative;
+    padding-top: 15px;
+
+    -webkit-box-shadow: 0px 0px 81px -1px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 0px 81px -1px rgba(0,0,0,0.1);
+    box-shadow: 0px 0px 81px -1px rgba(0,0,0,0.1);
+}
+
+input[type=text], input[type=password], input[type=date], input[type=checkbox], input[type=number], .multiline{
+    width: 80%;
+    height: 4vh;
+    padding: 6px 10px;
+    box-sizing: border-box;
+
+    font-size: 2vh;
+    font-family: sans-serif;
+    border: 0.2px solid rgb(204, 204, 204);
+    border-radius: 5px;
+    background-color: #f1f1f1;
+}
+.multiline{
+    width: 100%;
+    height: 40vh;
+    padding: 6px 10px;
+    box-sizing: border-box;
+}
+
+input[type=radio]{
+    width: 20%;
+    height: 2vh;
+    box-sizing: border-box;
+    font-size: 2vh;
+    font-family: sans-serif;
+}
+.login-button{
+    background-color: #f0f0f0;
+    transition: 0.1s ease-in;
+}
+.login-button:hover{
+    background-color: #dddddd;
+    transition: 0.1s ease-in;
+}
+.login-button:active{
+    background-color: #c9c9c9;
+    transition: 0.1s ease-in;
+}
+
+.employeeBlock{
+    width: 100%;
+    height: 5%;
+    display:inline-block;
+    background-color: #ffffff;
+    margin-bottom: 0.25%;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.spacer{
+    height: 15%;
+    width: 1%;
+}
+
+.adminButton{
+    background-color: #ff8484;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-weight: normal;
+}
+.required{
+    color: red;
+}

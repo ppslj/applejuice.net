@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<head>
+    <title id="TitleName">Park Printing Delivery Schedule</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style3.css">
+    <script type="text/javascript" src="deliveries.js"></script>
+</head>
+<body>
+    <div class="card" style="height: 25px;">
+        <!--left aligned things-->
+        <div class="holder" style="float: left; width: 60%;">
+            <image src="./images/trackle.png" style="width: 20%;"></image>
+        </div>
+        <!--right aligned things-->
+        <div class="holder" style="float: right;  width: 30%;">
+            <h6 id="dateToday">TODAY'S DATE HERE</h6>
+            <h6 id="totalDeliveries">Total Deliveries: 000</h6>
+        </div>
+    </div>
+    <br>
+    <!--deliveries for the day-->
+    <div class="deliveries">
+        <div class="headers">
+            <h6 class="eb1"><b>Package</b></h6>
+            <h6 class="eb2"><b>P/U</b></h6>
+            <h6 class="eb3"><b>Shipping</b></h6>
+            <h6 class="eb5"><b>Notes</b></h6>
+            <h6 class="eb7"><b>Job</b></h6>
+        </div>
+        <br>
+        <div class="listing" id="deliveriesListing">
+            <div class="prefab">
+                <h6 class="eb1"># BOXES</h6>
+                <h6 class="eb2">P/U</h6>
+                <h6 class="eb3">COMPANY</h6>
+                <h6 class="eb5">Shipping Information:</h6>
+                <h6 class="eb7">JOB #</h6>
+                <br>
+                <h6 class="eb1">PCKG TYPE</h6>
+                <h6 class="eb3">NAME/ADDR</h6>
+                <h6 class="eb5">NOTES HERE</h6>
+                <h6 class="eb7">PO #</h6>
+            </div>
+        </div>
+    </div>
+</body>

@@ -1,0 +1,39 @@
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+}
+.eb1, .eb2, .eb3, .eb4, .eb5, .eb6, .eb7{
+    float:left;
+    position: absolute;
+}
+.eb1{ 
+    margin-left: 2%;
+}
+.eb2{
+    margin-left: 13%;
+}
+.eb3{
+    margin-left: 22%;
+}
+.eb4{
+    margin-left: 30%;
+}
+.eb5{
+    margin-left: 55%;
+}
+.eb6{
+    margin-left: 65%;
+}
+.eb7{
+    margin-left: 80%;
+}
+
+.prefab{
+    margin: 3px;
+    border: 0.2px solid rgb(204, 204, 204);
+    border-radius: 2px;
+    height: 30px;
+}
+
+.card{
+    border-radius: 2px;
+}
